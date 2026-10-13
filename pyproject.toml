@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evitopo-gnn"
+version = "1.0.0"
+description = "Evidential Vessel-Topology Graph Learning with Uncertainty-Guided Contrastive Representation for Retinal Vessel Segmentation in Diabetic Retinopathy"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Iram Fatima" },
+    { name = "Ihtiram Raza Khan" },
+    { name = "Harleen Kaur" },
+]
+keywords = [
+    "retinal vessel segmentation", "diabetic retinopathy", "evidential deep learning",
+    "graph neural network", "topology preservation", "uncertainty quantification",
+    "contrastive learning", "vision transformer",
+]
+dependencies = [
+    "torch>=2.1",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "scikit-image>=0.21",
+    "Pillow>=9.5",
+    "PyYAML>=6.0",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-cov"]
+
+[tool.setuptools.packages.find]
+include = ["evitopo_gnn*"]
